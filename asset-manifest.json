@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/1c-expert-landing/static/css/main.f9d84005.css",
+    "main.js": "/1c-expert-landing/static/js/main.60885f25.js",
+    "static/media/hero-background.png": "/1c-expert-landing/static/media/hero-background.9fb8e369942a20bfb9c3.png",
+    "index.html": "/1c-expert-landing/index.html",
+    "main.f9d84005.css.map": "/1c-expert-landing/static/css/main.f9d84005.css.map",
+    "main.60885f25.js.map": "/1c-expert-landing/static/js/main.60885f25.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9d84005.css",
+    "static/js/main.60885f25.js"
+  ]
+}
