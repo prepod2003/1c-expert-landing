@@ -4,6 +4,12 @@
   max-width: 1000px;
 }
 
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 15px;
+  }
+}
+
 .section:nth-child(even) {
   background-color: #ffffff;
   border-radius: 8px;

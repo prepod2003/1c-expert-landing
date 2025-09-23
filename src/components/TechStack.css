@@ -44,3 +44,9 @@
   background-color: #00aaff;
   color: white;
 }
+
+@media (max-width: 768px) {
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -81,3 +81,14 @@
 .cta-button:hover {
   background-color: #0088cc;
 }
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
