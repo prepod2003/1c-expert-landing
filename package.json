@@ -2,6 +2,7 @@
   "name": "landing-page",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://prepod2003.github.io/1c-expert-landing",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.8.0",
