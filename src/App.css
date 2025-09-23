@@ -2,6 +2,7 @@
   padding: 60px 20px;
   margin: 0 auto;
   max-width: 1000px;
+  box-sizing: border-box; /* Учитываем padding в ширине */
 }
 
 @media (max-width: 768px) {

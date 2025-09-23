@@ -40,6 +40,7 @@
 
 .contact-form input,
 .contact-form textarea {
+  box-sizing: border-box; /* Учитываем padding в ширине */
   width: 100%;
   padding: 15px;
   margin-bottom: 20px;
