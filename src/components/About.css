@@ -1,0 +1,36 @@
+.about {
+  padding: 80px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.key-metrics {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.metric {
+  max-width: 200px;
+}
+
+.metric h3 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #00aaff;
+}
+
+.metric p {
+  font-size: 1rem;
+  color: #555;
+}
