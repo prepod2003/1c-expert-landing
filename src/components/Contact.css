@@ -71,3 +71,9 @@
   margin-top: 15px;
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  .contact {
+    padding-top: 40px;
+  }
+}

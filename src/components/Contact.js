@@ -5,8 +5,7 @@ import './Contact.css';
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
-    contact: '',
-    message: '',
+    phone: '',
   });
   const [status, setStatus] = useState('');
 
@@ -26,16 +25,14 @@ const Contact = () => {
     const chatId = process.env.REACT_APP_TELEGRAM_CHAT_ID;
 
     if (!botToken || !chatId) {
-      setStatus('Ошибка: Переменные окружения не найдены. Перезапустите сервер.');
+      setStatus('Ошибка конфигурации сервера.');
       return;
     }
 
     const text = `
-      Новая заявка с сайта!
+      Заявка на обратный звонок с сайта!
       Имя: ${formData.name}
-      Контакт (Email/Telegram): ${formData.contact}
-      Сообщение:
-      ${formData.message}
+      Телефон/Контакт: ${formData.phone}
     `;
 
     const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
@@ -44,23 +41,21 @@ const Contact = () => {
       await axios.post(url, {
         chat_id: chatId,
         text: text,
-        parse_mode: 'Markdown',
       });
-      setStatus('Сообщение успешно отправлено!');
-      setFormData({ name: '', contact: '', message: '' });
+      setStatus('Спасибо! Скоро свяжусь с вами.');
+      setFormData({ name: '', phone: '' });
     } catch (error) {
       console.error('Ошибка при отправке в Telegram:', error);
-      setStatus('Ошибка при отправке. Попробуйте позже.');
+      setStatus('Ошибка отправки. Попробуйте позже.');
     }
   };
 
   return (
     <section id="contact" className="contact">
-      <h2>Готовы обсудить ваш проект?</h2>
-      <p>Свяжитесь со мной, и мы найдем оптимальное решение для вашей задачи.</p>
+      <h2>Нужна консультация?</h2>
+      <p>Оставьте свой номер, и я перезвоню вам в ближайшее время.</p>
       
       <form className="contact-form" onSubmit={handleSubmit}>
-        <h3>Или оставьте заявку</h3>
         <input
           type="text"
           name="name"
@@ -70,22 +65,14 @@ const Contact = () => {
           required
         />
         <input
-          type="text"
-          name="contact"
-          placeholder="Email или Telegram"
-          value={formData.contact}
+          type="tel"
+          name="phone"
+          placeholder="Номер телефона или Telegram"
+          value={formData.phone}
           onChange={handleChange}
           required
         />
-        <textarea
-          name="message"
-          placeholder="Краткое описание задачи"
-          rows="5"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        ></textarea>
-        <button type="submit">Отправить</button>
+        <button type="submit">Жду звонка</button>
         {status && <p className="form-status">{status}</p>}
       </form>
     </section>

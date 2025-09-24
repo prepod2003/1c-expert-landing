@@ -6,9 +6,12 @@ const Hero = () => {
   return (
     <section className="hero" style={{ backgroundImage: `url(${heroBackground})` }}>
       <div className="hero-content">
-        <h1>Интеллектуальная автоматизация вашего бизнеса на 1С</h1>
-        <p>Создаю надежные решения на 1С, расширяя их возможности с помощью AI, REST API и n8n для роста вашего бизнеса.</p>
-        <a href="#contact" className="cta-button">Обсудить проект</a>
+        <h1>1С-Эксперт нового поколения</h1>
+        <p>Решаю задачи бизнеса от 'А' до 'Я': от бизнес-анализа и архитектуры до разработки и внедрения 1С, интегрированной с AI и современными веб-технологиями.</p>
+        <div className="hero-buttons">
+          <a href="#contact" className="cta-button">Заказать звонок</a>
+          <a href="#footer" className="cta-button secondary">Контакты</a>
+        </div>
       </div>
     </section>
   );
