@@ -1,5 +1,5 @@
 .contact {
-  padding: 40px 20px; /* Уменьшаем отступы */
+  padding: 40px 20px;
   background-color: #282c34;
   color: white;
   text-align: center;
@@ -28,7 +28,7 @@
 
 .contact-form {
   max-width: 100%;
-  margin: 40px 0 0; /* Убираем auto, т.к. центрирует .container */
+  margin: 40px 0 0;
   text-align: left;
 }
 
@@ -40,7 +40,7 @@
 
 .contact-form input,
 .contact-form textarea {
-  box-sizing: border-box; /* Учитываем padding в ширине */
+  box-sizing: border-box;
   width: 100%;
   padding: 15px;
   margin-bottom: 20px;
@@ -73,13 +73,17 @@
 }
 
 @media (max-width: 768px) {
-  .contact {
-    padding-top: 40px;
-  }
   .contact h2 {
     font-size: 1.8rem;
   }
   .contact-form {
     padding: 0 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .contact-form {
+    max-width: 80%;
+    margin: 40px auto 0;
   }
 }

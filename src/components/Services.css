@@ -56,7 +56,11 @@
   .services h2 {
     font-size: 1.8rem;
   }
+}
+
+/* Стили для планшетов и десктопов */
+@media (min-width: 769px) {
   .services-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
   }
 }
