@@ -1,5 +1,5 @@
 .footer {
-  padding: 60px 20px;
+  padding: 60px 0; /* Убираем боковые, оставляем вертикальные */
   text-align: center;
   background-color: #f8f9fa;
 }

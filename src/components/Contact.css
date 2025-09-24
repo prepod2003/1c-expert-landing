@@ -27,8 +27,8 @@
 }
 
 .contact-form {
-  max-width: 600px;
-  margin: 40px auto 0;
+  max-width: 100%;
+  margin: 40px 0 0; /* Убираем auto, т.к. центрирует .container */
   text-align: left;
 }
 

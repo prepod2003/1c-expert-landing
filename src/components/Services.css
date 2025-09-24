@@ -12,9 +12,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px; /* Боковые отступы */
+  max-width: 100%; /* Занимает всю ширину .container */
+  /* margin и padding уехали в .container */
 }
 
 .service-card {

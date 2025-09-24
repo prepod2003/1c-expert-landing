@@ -4,8 +4,7 @@
 }
 
 .about-content {
-  max-width: 900px;
-  margin: 0 auto;
+  /* max-width и margin уехали в .container */
 }
 
 .about h2 {

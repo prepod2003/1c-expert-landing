@@ -11,18 +11,20 @@ const TechStack = () => {
 
   return (
     <section className="tech-stack">
-      <h2>Стек технологий</h2>
-      <div className="tech-grid">
-        {Object.entries(tech).map(([category, items]) => (
-          <div className="tech-category" key={category}>
-            <h3>{category}</h3>
-            <div className="tech-items">
-              {items.map(item => (
-                <span className="tech-item" key={item}>{item}</span>
-              ))}
+      <div className="container">
+        <h2>Стек технологий</h2>
+        <div className="tech-grid">
+          {Object.entries(tech).map(([category, items]) => (
+            <div className="tech-category" key={category}>
+              <h3>{category}</h3>
+              <div className="tech-items">
+                {items.map(item => (
+                  <span className="tech-item" key={item}>{item}</span>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

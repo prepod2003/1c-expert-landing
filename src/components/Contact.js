@@ -52,29 +52,31 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact">
-      <h2>Нужна консультация?</h2>
-      <p>Оставьте свой номер, и я перезвоню вам в ближайшее время.</p>
-      
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Ваше имя"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Телефон или Telegram"
-          value={formData.phone}
-          onChange={handleChange}
-          required
-        />
-        <button type="submit">Жду звонка</button>
-        {status && <p className="form-status">{status}</p>}
-      </form>
+      <div className="container">
+        <h2>Нужна консультация?</h2>
+        <p>Оставьте свой номер, и я перезвоню вам в ближайшее время.</p>
+        
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Ваше имя"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Телефон или Telegram"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+          />
+          <button type="submit">Жду звонка</button>
+          {status && <p className="form-status">{status}</p>}
+        </form>
+      </div>
     </section>
   );
 };

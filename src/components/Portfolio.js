@@ -25,16 +25,18 @@ const Portfolio = () => {
 
   return (
     <section className="portfolio">
-      <h2>Примеры проектов</h2>
-      <div className="portfolio-grid">
-        {cases.map((caseItem, index) => (
-          <div className="case-card" key={index}>
-            <h3>{caseItem.title}</h3>
-            <p><strong>Проблема:</strong> {caseItem.problem}</p>
-            <p><strong>Решение:</strong> {caseItem.solution}</p>
-            <p><strong>Результат:</strong> {caseItem.result}</p>
-          </div>
-        ))}
+      <div className="container">
+        <h2>Примеры проектов</h2>
+        <div className="portfolio-grid">
+          {cases.map((caseItem, index) => (
+            <div className="case-card" key={index}>
+              <h3>{caseItem.title}</h3>
+              <p><strong>Проблема:</strong> {caseItem.problem}</p>
+              <p><strong>Решение:</strong> {caseItem.solution}</p>
+              <p><strong>Результат:</strong> {caseItem.result}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

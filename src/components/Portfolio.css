@@ -12,10 +12,9 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 100%;
+  /* margin и padding уехали в .container */
   text-align: left;
-  padding: 0 15px; /* Боковые отступы */
 }
 
 .case-card {
