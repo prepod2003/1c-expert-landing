@@ -1,5 +1,5 @@
 .services {
-  padding: 40px 0; /* Уменьшаем отступы */
+  padding: 40px 15px;
   text-align: center;
 }
 
@@ -10,10 +10,9 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  max-width: 100%; /* Занимает всю ширину .container */
-  /* margin и padding уехали в .container */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .service-card {

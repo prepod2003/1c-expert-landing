@@ -1,5 +1,5 @@
 .tech-stack {
-  padding: 40px 20px; /* Уменьшаем отступы */
+  padding: 40px 15px;
   text-align: center;
 }
 
@@ -12,8 +12,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
-  max-width: 100%;
-  /* margin уехал в .container */
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: left;
 }
 
@@ -48,5 +48,12 @@
 @media (max-width: 768px) {
   .tech-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) {
+  .tech-grid {
+    max-width: 900px; /* Ограничиваем ширину */
+    margin: 0 auto; /* Центрируем */
   }
 }

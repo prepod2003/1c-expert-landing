@@ -1,8 +1,13 @@
 .contact {
-  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px;
   background-color: #282c34;
   color: white;
   text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-sizing: border-box;
 }
 
 .contact h2 {
@@ -27,8 +32,8 @@
 }
 
 .contact-form {
-  max-width: 100%;
-  margin: 40px 0 0;
+  max-width: 900px; /* Ограничиваем ширину */
+  margin: 40px auto 0; /* Центрируем */
   text-align: left;
 }
 
@@ -82,8 +87,5 @@
 }
 
 @media (min-width: 769px) {
-  .contact-form {
-    max-width: 80%;
-    margin: 40px auto 0;
-  }
+  /* Стили для десктопа уже заданы выше */
 }

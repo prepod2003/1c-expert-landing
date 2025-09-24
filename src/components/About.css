@@ -1,6 +1,12 @@
 .about {
-  padding: 40px 20px; /* Уменьшаем отступы */
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px;
   text-align: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-sizing: border-box;
 }
 
 .about-content {

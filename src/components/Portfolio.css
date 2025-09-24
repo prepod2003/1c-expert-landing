@@ -1,5 +1,5 @@
 .portfolio {
-  padding: 40px 0;
+  padding: 40px 15px;
   text-align: center;
 }
 
@@ -12,7 +12,8 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
-  max-width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: left;
 }
 
@@ -43,7 +44,7 @@
 /* Стили для планшетов и десктопов */
 @media (min-width: 769px) {
   .portfolio-grid {
-    max-width: 80%; /* Занимает 80% ширины контейнера */
-    margin: 0 auto; /* Центрирование */
+    max-width: 900px; /* Ограничиваем ширину */
+    margin: 0 auto; /* Центрируем */
   }
 }
