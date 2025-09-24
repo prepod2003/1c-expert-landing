@@ -1,5 +1,5 @@
 .footer {
-  padding: 80px 0 40px; /* Увеличиваем верхний padding, оставляем нижний */
+  padding: 30px 0; /* Уменьшаем вертикальные отступы */
   /* scroll-margin-top убираем, он не работает надежно */
   text-align: center;
   background-color: #f8f9fa;
