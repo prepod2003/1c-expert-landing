@@ -76,4 +76,7 @@
   .contact {
     padding-top: 40px;
   }
+  .contact-form {
+    padding: 0 10px;
+  }
 }

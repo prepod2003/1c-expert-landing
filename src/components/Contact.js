@@ -67,7 +67,7 @@ const Contact = () => {
         <input
           type="tel"
           name="phone"
-          placeholder="Номер телефона или Telegram"
+          placeholder="Телефон или Telegram"
           value={formData.phone}
           onChange={handleChange}
           required

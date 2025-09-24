@@ -41,13 +41,13 @@
   font-size: 1rem;
   color: #555;
   margin-bottom: 10px;
-  position: relative;
-  padding-left: 20px;
+  display: flex;
+  align-items: flex-start; /* Выравниваем по верху, если текст в несколько строк */
 }
 
 .service-card li::before {
   content: '✔';
-  position: absolute;
-  left: 0;
   color: #00aaff;
+  margin-right: 10px; /* Отступ между галочкой и текстом */
+  font-weight: bold;
 }
