@@ -11,16 +11,16 @@ function App() {
   return (
     <div className="App">
       <Hero />
-      <div className="section">
+      <div className="section-card">
         <About />
       </div>
-      <div className="section">
+      <div className="section-card">
         <Services />
       </div>
-      <div className="section">
+      <div className="section-card">
         <Portfolio />
       </div>
-      <div className="section">
+      <div className="section-card">
         <TechStack />
       </div>
       <div className="section">
