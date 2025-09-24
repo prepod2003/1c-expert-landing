@@ -17,6 +17,7 @@ const Footer = () => {
           <a href="https://wa.me/79045596847" target="_blank" rel="noopener noreferrer" className="social-link whatsapp">WhatsApp</a>
         </div>
       </div>
+      <div style={{ height: '80px' }}></div> {/* Распорка */}
     </footer>
   );
 };
