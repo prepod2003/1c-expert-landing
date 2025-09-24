@@ -16,9 +16,8 @@ const Footer = () => {
           </p>
         </div>
         <div className="social-links">
-          <a href="https://t.me/Prepod2003" target="_blank" rel="noopener noreferrer">Telegram</a>
-          {/* Ссылку на WhatsApp можно сгенерировать, зная номер телефона */}
-          <a href="https://wa.me/79045596847" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="https://t.me/Prepod2003" target="_blank" rel="noopener noreferrer" className="social-link telegram">Telegram</a>
+          <a href="https://wa.me/79045596847" target="_blank" rel="noopener noreferrer" className="social-link whatsapp">WhatsApp</a>
         </div>
       </div>
     </footer>

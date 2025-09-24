@@ -1,5 +1,6 @@
 .footer {
-  padding: 60px 0; /* Убираем боковые, оставляем вертикальные */
+  padding: 40px 0;
+  scroll-margin-top: 60px;
   text-align: center;
   background-color: #f8f9fa;
 }
@@ -28,18 +29,26 @@
   color: #00aaff;
 }
 
-.social-links a {
+.social-links .social-link {
   display: inline-block;
-  margin: 0 15px;
-  padding: 10px 25px;
-  border: 1px solid #00aaff;
-  color: #00aaff;
+  margin: 10px 15px;
+  padding: 12px 30px;
+  color: white;
   text-decoration: none;
-  border-radius: 25px;
-  transition: all 0.3s;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.2s;
 }
 
-.social-links a:hover {
-  background-color: #00aaff;
-  color: white;
+.social-links .social-link:hover {
+  transform: scale(1.05);
+}
+
+.social-links .telegram {
+  background-color: #29B6F6;
+}
+
+.social-links .whatsapp {
+  background-color: #4CAF50;
 }

@@ -1,5 +1,5 @@
 .portfolio {
-  padding: 80px 20px;
+  padding: 40px 0; /* Уменьшаем отступы */
   text-align: center;
 }
 

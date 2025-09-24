@@ -1,5 +1,5 @@
 .contact {
-  padding: 80px 20px;
+  padding: 40px 20px; /* Уменьшаем отступы */
   background-color: #282c34;
   color: white;
   text-align: center;
