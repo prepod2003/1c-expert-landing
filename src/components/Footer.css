@@ -1,6 +1,6 @@
 .footer {
-  padding: 60px 0; /* Увеличиваем верхний отступ */
-  scroll-margin-top: 100px; /* Увеличиваем компенсацию для якоря */
+  padding: 40px 0; /* Уменьшаем внутренний отступ */
+  scroll-margin-top: 120px; /* Увеличиваем компенсацию для скролла */
   text-align: center;
   background-color: #f8f9fa;
 }
