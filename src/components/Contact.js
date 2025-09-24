@@ -66,7 +66,7 @@ const Contact = () => {
             required
           />
           <input
-            type="tel"
+            type="text"
             name="phone"
             placeholder="Телефон или Telegram"
             value={formData.phone}
