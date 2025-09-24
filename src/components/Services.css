@@ -51,3 +51,9 @@
   margin-right: 10px; /* Отступ между галочкой и текстом */
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  .services-grid {
+    padding: 0 10px;
+  }
+}

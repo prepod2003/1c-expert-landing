@@ -76,6 +76,9 @@
   .contact {
     padding-top: 40px;
   }
+  .contact h2 {
+    font-size: 1.8rem;
+  }
   .contact-form {
     padding: 0 10px;
   }
