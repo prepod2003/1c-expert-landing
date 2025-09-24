@@ -1,24 +1,24 @@
+/* Убираем все стили из App, чтобы не было конфликтов */
 .App {
-  padding: 0 15px; /* Глобальные боковые отступы для всего сайта */
 }
 
+/* Основной стиль для всех секций-контейнеров */
 .section {
-  padding: 60px 0; /* Убираем боковые, оставляем только вертикальные */
-  margin: 0 auto;
-  max-width: 1000px;
-  box-sizing: border-box; /* Учитываем padding в ширине */
+  padding: 60px 15px; /* Вертикальные и ГОРИЗОНТАЛЬНЫЕ отступы */
+  box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  .section {
-    padding: 40px 0; /* Убираем боковые, оставляем только вертикальные */
-  }
-}
-
+/* Стиль для секций, которые должны быть на белой "карточке" */
 .section-card {
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0; /* Вертикальные отступы между карточками */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 15px; /* Уменьшаем вертикальные отступы на мобильных */
+  }
 }
