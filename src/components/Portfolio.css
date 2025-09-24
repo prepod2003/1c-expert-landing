@@ -1,6 +1,5 @@
 .portfolio {
   padding: 80px 20px;
-  background-color: #f4f4f4;
   text-align: center;
 }
 
@@ -40,10 +39,4 @@
 
 .case-card p:last-child {
   margin-bottom: 0;
-}
-
-@media (max-width: 768px) {
-  .portfolio-grid {
-    padding: 0 10px;
-  }
 }
