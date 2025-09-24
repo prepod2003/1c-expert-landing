@@ -15,6 +15,9 @@
 .DS_Store
 .env
 .env.local
+
+# Private local folder
+/private
 .env.development.local
 .env.test.local
 .env.production.local
