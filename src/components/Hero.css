@@ -13,8 +13,6 @@
 
 .hero {
   position: relative;
-  background-size: cover;
-  background-position: center;
   color: white;
   padding: 100px 20px;
   text-align: center;
@@ -24,10 +22,11 @@
   align-items: center;
   overflow: hidden;
 
-  /* Применяем анимацию. Она длится 2 секунды */
+  /* Применяем анимацию "прожектора". Она длится 2 секунды */
   animation: reveal 2s ease-out forwards;
 }
 
+/* Псевдоэлемент для фонового изображения с прозрачностью */
 .hero::before {
   content: '';
   position: absolute;
@@ -35,7 +34,30 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-image: var(--hero-bg-image);
+  background-size: cover;
+  background-position: center;
+  /* Делаем изображение полупрозрачным, чтобы частицы были видны */
+  /* Можно настроить от 0.2 до 0.5 в зависимости от желаемой видимости */
+  opacity: 0.3;
+  z-index: 0;
+}
+
+/* Overlay для затемнения и читаемости текста */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Легкий градиент для лучшей видимости частиц и читаемости текста */
+  /* Уменьшили непрозрачность, чтобы частицы были более заметны */
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.1) 0%,
+    rgba(15, 23, 42, 0.25) 100%
+  );
   z-index: 1;
 }
 

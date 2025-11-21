@@ -8,7 +8,14 @@ const Hero = () => {
   const text = "1С-Эксперт нового поколения";
 
   return (
-    <section className="hero" style={{ backgroundImage: `url(${heroBackground})`, position: 'relative', zIndex: 2 }}>
+    <section 
+      className="hero" 
+      style={{ 
+        '--hero-bg-image': `url(${heroBackground})`,
+        position: 'relative', 
+        zIndex: 2,
+      }}
+    >
       <div className="container">
         <div className="hero-content">
           <motion.h1
