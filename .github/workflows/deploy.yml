@@ -5,12 +5,17 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -19,14 +24,23 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
-        run: npm ci
+        run: |
+          npm ci
+          echo "Dependencies installed successfully"
 
-      - name: Build and Deploy
+      - name: Build
+        run: npm run build
+        env:
+          REACT_APP_TELEGRAM_BOT_TOKEN: ${{ secrets.REACT_APP_TELEGRAM_BOT_TOKEN }}
+          REACT_APP_TELEGRAM_CHAT_ID: ${{ secrets.REACT_APP_TELEGRAM_CHAT_ID }}
+
+      - name: Deploy to GitHub Pages
         run: |
           git config --global user.email "167418898+prepod2003@users.noreply.github.com"
           git config --global user.name "prepod2003"
-          git remote set-url origin https://${{ secrets.ACCESS_TOKEN }}@github.com/prepod2003/1c-expert-landing.git
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           npm run deploy
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REACT_APP_TELEGRAM_BOT_TOKEN: ${{ secrets.REACT_APP_TELEGRAM_BOT_TOKEN }}
           REACT_APP_TELEGRAM_CHAT_ID: ${{ secrets.REACT_APP_TELEGRAM_CHAT_ID }}

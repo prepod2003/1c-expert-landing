@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d build -r https://github.com/prepod2003/1c-expert-landing.git"
+    "deploy": "gh-pages -b gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
