@@ -2,17 +2,21 @@
   max-width: 1200px;
   margin: 40px auto;
   padding: 40px;
-  background-color: #282c34;
+  /* Glassmorphism */
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
   color: white;
   text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 
 .contact h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .contact-details {
@@ -20,7 +24,7 @@
 }
 
 .contact-link {
-  color: #00aaff;
+  color: #38bdf8;
   text-decoration: none;
   font-size: 1.2rem;
   margin: 0 15px;
@@ -28,12 +32,13 @@
 }
 
 .contact-link:hover {
-  color: white;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
 }
 
 .contact-form {
-  max-width: 900px; /* Ограничиваем ширину */
-  margin: 40px auto 0; /* Центрируем */
+  max-width: 900px;
+  margin: 40px auto 0;
   text-align: left;
 }
 
@@ -41,6 +46,7 @@
   font-size: 1.5rem;
   margin-bottom: 20px;
   text-align: center;
+  color: #ffffff;
 }
 
 .contact-form input,
@@ -49,43 +55,50 @@
   width: 100%;
   padding: 15px;
   margin-bottom: 20px;
-  border: 1px solid #555;
-  background-color: #333a45;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   color: white;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #38bdf8;
 }
 
 .contact-form button {
   width: 100%;
   padding: 15px;
-  background-color: #00aaff;
-  color: white;
+  background-color: #38bdf8;
+  color: #0f172a;
   border: none;
   font-size: 1.1rem;
+  font-weight: bold;
   cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .contact-form button:hover {
-  background-color: #0088cc;
+  background-color: #0ea5e9;
+  transform: translateY(-2px);
 }
 
 .form-status {
   margin-top: 15px;
   font-weight: bold;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
   .contact h2 {
     font-size: 1.8rem;
   }
+
   .contact-form {
     padding: 0 10px;
   }
-}
-
-@media (min-width: 769px) {
-  /* Стили для десктопа уже заданы выше */
 }

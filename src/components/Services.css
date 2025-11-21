@@ -6,6 +6,7 @@
 .services h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
+  color: #ffffff;
 }
 
 .services-grid {
@@ -16,18 +17,26 @@
 }
 
 .service-card {
-  background-color: white;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 16px;
   text-align: left;
   box-sizing: border-box;
-  border: 1px solid #00aaff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-color: #38bdf8;
 }
 
 .service-card h3 {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  color: #333;
+  color: #ffffff;
 }
 
 .service-card ul {
@@ -38,16 +47,16 @@
 
 .service-card li {
   font-size: 1rem;
-  color: #555;
+  color: #cbd5e1;
   margin-bottom: 10px;
   display: flex;
-  align-items: flex-start; /* Выравниваем по верху, если текст в несколько строк */
+  align-items: flex-start;
 }
 
 .service-card li::before {
   content: '✔';
-  color: #00aaff;
-  margin-right: 10px; /* Отступ между галочкой и текстом */
+  color: #38bdf8;
+  margin-right: 10px;
   font-weight: bold;
 }
 
@@ -57,9 +66,8 @@
   }
 }
 
-/* Стили для планшетов и десктопов */
 @media (min-width: 769px) {
   .services-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    grid-template-columns: repeat(2, 1fr);
   }
 }

@@ -6,6 +6,7 @@
 .portfolio h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
+  color: #ffffff;
 }
 
 .portfolio-grid {
@@ -18,33 +19,44 @@
 }
 
 .case-card {
-  background-color: white;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
   padding: 30px;
-  border-radius: 10px;
-  border: 1px solid #00aaff;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
 }
 
 .case-card h3 {
   font-size: 1.5rem;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .case-card p {
   font-size: 1rem;
-  color: #555;
+  color: #cbd5e1;
   line-height: 1.6;
   margin-bottom: 10px;
+}
+
+.case-card p strong {
+  color: #38bdf8;
 }
 
 .case-card p:last-child {
   margin-bottom: 0;
 }
 
-/* Стили для планшетов и десктопов */
 @media (min-width: 769px) {
   .portfolio-grid {
-    max-width: 900px; /* Ограничиваем ширину */
-    margin: 0 auto; /* Центрируем */
+    max-width: 900px;
+    margin: 0 auto;
   }
 }

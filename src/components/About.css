@@ -3,9 +3,12 @@
   margin: 40px auto;
   padding: 40px;
   text-align: center;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  /* Glassmorphism */
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 
@@ -16,6 +19,7 @@
 .about h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .key-metrics {
@@ -31,12 +35,14 @@
 .metric h3 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #00aaff;
+  color: #38bdf8;
+  /* Lighter blue */
 }
 
 .metric p {
   font-size: 1rem;
-  color: #555;
+  color: #cbd5e1;
+  /* Light gray */
 }
 
 @media (max-width: 768px) {
