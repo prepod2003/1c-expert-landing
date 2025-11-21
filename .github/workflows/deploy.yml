@@ -21,15 +21,12 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Build
-        run: npm run build
-        env:
-          REACT_APP_TELEGRAM_BOT_TOKEN: ${{ secrets.REACT_APP_TELEGRAM_BOT_TOKEN }}
-          REACT_APP_TELEGRAM_CHAT_ID: ${{ secrets.REACT_APP_TELEGRAM_CHAT_ID }}
-
-      - name: Deploy
+      - name: Build and Deploy
         run: |
           git config --global user.email "167418898+prepod2003@users.noreply.github.com"
           git config --global user.name "prepod2003"
           git remote set-url origin https://${{ secrets.ACCESS_TOKEN }}@github.com/prepod2003/1c-expert-landing.git
           npm run deploy
+        env:
+          REACT_APP_TELEGRAM_BOT_TOKEN: ${{ secrets.REACT_APP_TELEGRAM_BOT_TOKEN }}
+          REACT_APP_TELEGRAM_CHAT_ID: ${{ secrets.REACT_APP_TELEGRAM_CHAT_ID }}
