@@ -5,7 +5,7 @@ import heroBackground from '../assets/hero-background.png';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
-  const text = "Архитектор 1С и интеллектуальных систем: Enterprise + AI + Web";
+  const text = "1С-Эксперт нового поколения: Enterprise + AI + Web";
 
   return (
     <section 
