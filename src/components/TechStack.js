@@ -3,10 +3,10 @@ import './TechStack.css';
 
 const TechStack = () => {
   const tech = {
-    "Языки": ["1С", "Python", "C#", "JavaScript"],
-    "Платформы": ["1С:Предприятие", "n8n"],
-    "Базы данных": ["MS SQL", "PostgreSQL"],
-    "AI": ["LLM", "Vector DB"]
+    "Языки": ["1С (Expert)", "C# (.NET)", "Python", "JavaScript"],
+    "Платформы": ["1С:Предприятие 8.3", "n8n", "Telegram API"],
+    "Базы данных": ["MS SQL", "PostgreSQL", "Supabase"],
+    "AI & Data": ["OpenCV", "Aspose", "LLM", "Vector DB"]
   };
 
   return (

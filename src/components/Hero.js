@@ -5,7 +5,7 @@ import heroBackground from '../assets/hero-background.png';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
-  const text = "1С-Эксперт нового поколения";
+  const text = "Архитектор 1С и интеллектуальных систем: Enterprise + AI + Web";
 
   return (
     <section 
@@ -40,7 +40,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.5, duration: 0.8 }}
           >
-            Решаю задачи бизнеса от 'А' до 'Я': от бизнес-анализа и архитектуры до разработки и внедрения 1С, интегрированной с AI и современными веб-технологиями.
+            Разрабатываю и внедряю решения там, где стандартная 1С бессильна. Объединяю надежность платформы 1С с мощью нейросетей, Python и C# для кратного роста эффективности вашего бизнеса.
           </motion.p>
           <motion.div
             className="hero-buttons"
