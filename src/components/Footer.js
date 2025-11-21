@@ -15,6 +15,7 @@ const Footer = () => {
         <div className="social-links">
           <a href="https://t.me/Prepod2003" target="_blank" rel="noopener noreferrer" className="social-link telegram">Telegram</a>
           <a href="https://wa.me/79045596847" target="_blank" rel="noopener noreferrer" className="social-link whatsapp">WhatsApp</a>
+          <a href="https://infostart.ru/profile/7899" target="_blank" rel="noopener noreferrer" className="social-link infostart">Infostart</a>
         </div>
       </div>
       <div style={{ height: '80px' }}></div> {/* Распорка */}
